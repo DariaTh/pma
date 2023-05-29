@@ -3,11 +3,12 @@ $(document).ready(function(){
   console.log("app initiated");
 
   $('.tab-testimonial-carousel').slick({
-    slidesToShow: 3,
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-    adaptiveHeight: true,
-    // centerMode: true,
+    variableWidth: true,
   });
 
   $('.news-carousel').slick({
