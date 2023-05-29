@@ -199,22 +199,76 @@
 
     <div class="testimonials">
       <div class="nav nav-underline" id="v-pills-tab" role="tablist">
-        <button class="nav-link active custom-tab-link" id="v-pills-experts-tab" data-bs-toggle="pill" data-bs-target="#v-pills-experts"
-          type="button" role="tab" aria-controls="v-pills-experts" aria-selected="true">Experts</button>
-        <button class="nav-link custom-tab-link" id="v-pills-team-tab" data-bs-toggle="pill" data-bs-target="#v-pills-team"
-          type="button" role="tab" aria-controls="v-pills-team" aria-selected="false">Team</button>
-        <button class="nav-link custom-tab-link" id="v-pills-members-tab" data-bs-toggle="pill" data-bs-target="#v-pills-members"
-          type="button" role="tab" aria-controls="v-pills-members" aria-selected="false">Members</button>
+        <button class="nav-link active custom-tab-link" id="v-pills-experts-tab" data-bs-toggle="pill"
+          data-bs-target="#v-pills-experts" type="button" role="tab" aria-controls="v-pills-experts"
+          aria-selected="true">Experts</button>
+        <button class="nav-link custom-tab-link" id="v-pills-team-tab" data-bs-toggle="pill"
+          data-bs-target="#v-pills-team" type="button" role="tab" aria-controls="v-pills-team"
+          aria-selected="false">Team</button>
+        <button class="nav-link custom-tab-link" id="v-pills-members-tab" data-bs-toggle="pill"
+          data-bs-target="#v-pills-members" type="button" role="tab" aria-controls="v-pills-members"
+          aria-selected="false">Members</button>
       </div>
       <div class="tab-content" id="v-pills-tabContent">
         <div class="tab-pane fade show active" id="v-pills-experts" role="tabpanel"
           aria-labelledby="v-pills-experts-tab" tabindex="0">
           <div class="tab-testimonial-carousel">
-            <div><img src="http://via.placeholder.com/242x300/ffffff/000000" alt=""></div>
-            <div><img src="http://via.placeholder.com/242x300" alt=""></div>
-            <div><img src="http://via.placeholder.com/242x300/000000/ffffff" alt=""></div>
-            <div><img src="http://via.placeholder.com/242x300/ffffff/000000" alt=""></div>
-            <div><img src="http://via.placeholder.com/242x300" alt=""></div>
+            <div>
+              <div class="testimonial-slide-content">
+                <p>Bitcoin is going to be digital gold. In order to be a part of crypto you need to understand crypto
+                  and
+                  there is no better place to do it that PM Academy. Great public service</p>
+                <div class="person-info">
+                  <img src="../assets/images/testimonials/expert-michael.png" />
+                  <div class="person-info_name">
+                    <p class="person-name">Michael Novogratz</p>
+                    <p class="person-status">Ex-hedge fund manager and CEO of Galaxy Investment</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="testimonial-slide-content">
+                <p>Bitcoin is going to be digital gold. In order to be a part of crypto you need to understand crypto
+                  and
+                  there is no better place to do it that PM Academy. Great public service</p>
+                <div class="person-info">
+                  <img src="../assets/images/testimonials/expert-michael.png" />
+                  <div class="person-info_name">
+                    <p class="person-name">Michael Novogratz</p>
+                    <p class="person-status">Ex-hedge fund manager and CEO of Galaxy Investment</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="testimonial-slide-content">
+                <p>Bitcoin is going to be digital gold. In order to be a part of crypto you need to understand crypto
+                  and
+                  there is no better place to do it that PM Academy. Great public service</p>
+                <div class="person-info">
+                  <img src="../assets/images/testimonials/expert-michael.png" />
+                  <div class="person-info_name">
+                    <p class="person-name">Michael Novogratz</p>
+                    <p class="person-status">Ex-hedge fund manager and CEO of Galaxy Investment</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="testimonial-slide-content">
+                <p>Bitcoin is going to be digital gold. In order to be a part of crypto you need to understand crypto
+                  and
+                  there is no better place to do it that PM Academy. Great public service</p>
+                <div class="person-info">
+                  <img src="../assets/images/testimonials/expert-michael.png" />
+                  <div class="person-info_name">
+                    <p class="person-name">Michael Novogratz</p>
+                    <p class="person-status">Ex-hedge fund manager and CEO of Galaxy Investment</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="tab-pane fade" id="v-pills-team" role="tabpanel" aria-labelledby="v-pills-team-tab" tabindex="0">
@@ -237,7 +291,31 @@
 <section class="faq top-margin">
   <div class="container">
     <h2 class="section-title">Frequently <span>Asked Questions </span></h2>
+    <div class="faq-wrapper">
+      <div class="nav nav-underline" id="faq-tab" role="tablist">
+        <button class="nav-link active custom-tab-link" id="v-pills-financial-tab" data-bs-toggle="pill"
+          data-bs-target="#v-pills-financial" type="button" role="tab" aria-controls="v-pills-financial"
+          aria-selected="true">Financial Information</button>
+        <button class="nav-link custom-tab-link" id="v-pills-trading-tab" data-bs-toggle="pill"
+          data-bs-target="#v-pills-trading" type="button" role="tab" aria-controls="v-pills-trading"
+          aria-selected="false">Trading</button>
+        <button class="nav-link custom-tab-link" id="v-pills-technical-tab" data-bs-toggle="pill"
+          data-bs-target="#v-pills-technical" type="button" role="tab" aria-controls="v-pills-technical"
+          aria-selected="false">Technical support</button>
+      </div>
 
+      <div class="tab-content" id="v-pills-tabContent-faq">
+        <div class="tab-pane fade show active" id="v-pills-financial" role="tabpanel"
+          aria-labelledby="v-pills-financial-tab" tabindex="0">
+          {{> faqHome }}
+          </div>
+        <div class="tab-pane fade" id="v-pills-trading" role="tabpanel" aria-labelledby="v-pills-trading-tab"
+          tabindex="0">
+          trading</div>
+        <div class="tab-pane fade" id="v-pills-technical" role="tabpanel" aria-labelledby="v-pills-technical-tab"
+          tabindex="0">technical</div>
+      </div>
+    </div>
   </div>
 </section>
 
