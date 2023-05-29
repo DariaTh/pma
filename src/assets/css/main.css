@@ -1,0 +1,507 @@
+:root {
+    --main-black: #141414;
+    --main-green: #00C753;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+body {
+    background-color: #F8F4EE;
+    padding: 0 80px;
+}
+
+.page-wrapper {
+    background-color: #ffffff;
+    border-radius: 0px 0px 40px 40px;
+}
+
+.container {
+    padding: 0 80px;
+}
+
+
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding-top: 67px;
+    z-index: 1;
+}
+
+.logo img {
+    width: 110px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 67px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F4EE;
+    padding: 17px 48px;
+    border-radius: 50px;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item_drop::after {
+    content: "";
+}
+
+.drop-menu {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    background-color: #F8F4EE;
+    min-width: 100px;
+    transition: 0.2s all ease-in-out;
+}
+
+.drop-menu-item {
+    width: 100%;
+}
+
+.drop-menu-item:hover a {
+    color: #bebebe;
+}
+
+.drop-menu-item a {
+    color: #555555;
+}
+
+.menu-item:hover .drop-menu {
+    display: block;
+    opacity: 1;
+}
+
+.menu li:not(:last-child) {
+    margin-right: 32px;
+}
+
+.menu a {
+    font-family: 'Raleway';
+    display: block;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #555555;
+    transition: 0.2s all ease-in-out;
+}
+
+.menu a:hover {
+    opacity: 1;
+    color: #bebebe;
+}
+
+.menu-icon {
+    display: none;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked~.menu {
+    transform: scale(1, 1);
+}
+
+.top-margin {
+    margin-top: 140px;
+}
+
+
+/*------------------------------- Main section -------------------------------*/
+
+.main-section {
+    padding-top: 132px;
+    padding-bottom: 46px;
+    background-image: url(../images/main-back.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+}
+
+.main-section h1 {
+    font-family: 'Poppins';
+    font-weight: 400;
+    color: #141414;
+    font-size: 72px;
+    line-height: 72px;
+    max-width: 850px;
+}
+
+.main-section h1 span {
+    color: #00C753;
+}
+
+.main-section h2 {
+    color: #555555;
+    font-size: 24px;
+    line-height: 34px;
+    margin-top: 24px;
+}
+
+.call-wrapper {
+    margin-top: 90px;
+    display: flex;
+}
+
+.call-wrapper p {
+    max-width: 320px;
+    color: #555555;
+    font-size: 12px;
+    line-height: 17px;
+    margin-right: 21px;
+    font-family: 'Raleway';
+    font-weight: 400;
+}
+
+.call-wrapper a {
+    font-family: 'Poppins';
+    font-weight: 500;
+    background: #141414;
+    box-shadow: 14px 0px 35px rgba(33, 38, 106, 0.1);
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 17px;
+    color: #ffffff;
+    padding: 20px 18px;
+    text-align: center;
+}
+
+.logo_wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.logo_item {
+    padding: 48px;
+    border-top: 1px solid #D9D9D9;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.logo_item:not(:last-child) {
+    border-right: 1px solid #D9D9D9;
+}
+
+
+/*------------------------------- Financial success -------------------------------*/
+
+.row-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.financial-success_text {
+    max-width: 609px;
+}
+
+.financial-success_items {
+    max-width: 520px;
+}
+
+.financial-success_text p {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.4;
+    color: var(--main-black);
+    margin-bottom: 24px;
+}
+
+.financial-success_text p span {
+    color: var(--main-green);
+}
+
+.icon-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #F8F4EE;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.icon-item_icon {
+    background: #FFFFFF;
+    border-radius: 14.4px;
+    min-width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.icon-item_text p {
+    color: var(--main-black);
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+
+/*------------------------------- How it works -------------------------------*/
+
+h2.section-title {
+    color: var(--main-black);
+    font-size: 40px;
+    line-height: 1.4;
+    max-width: 700px;
+    margin-bottom: 24px;
+}
+
+.section-title span {
+    color: var(--main-green);
+}
+
+.steps_wrapper {
+    margin-top: 60px;
+}
+
+.step-col-1 {
+    width: 32%;
+    position: relative;
+    padding: 50px 50px 50px 0;
+}
+
+.step-col-2 {
+    width: 36%;
+    position: relative;
+    padding: 50px;
+}
+
+.step-col-3 {
+    width: 32%;
+    position: relative;
+    padding: 50px 0 50px 50px;
+}
+
+.step-col:not(:last-child):after {
+    content: "";
+    background: linear-gradient(270deg, rgba(217, 217, 217, 0) 0%, rgba(217, 217, 217, 0.982286) 7.52%, #D9D9D9 91.88%, rgba(217, 217, 217, 0) 100%);
+    width: 240px;
+    position: absolute;
+    right: -120px;
+    top: 120px;
+    height: 1px;
+    transform: rotate(90deg);
+}
+
+.step-col_title {
+    display: flex;
+    align-items: end;
+    margin-bottom: 20px;
+}
+
+.step-col_title span {
+    font-size: 72px;
+    line-height: 1;
+    color: var(--main-green);
+    margin-right: 28px;
+}
+
+.step-col_title p {
+    font-size: 24px;
+    line-height: 1.4;
+    color: var(--main-black);
+}
+
+.step-col_text p {
+    color: #555555;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+
+/*------------------------------- Open account -------------------------------*/
+
+h3.section-subtitle {
+    font-size: 24px;
+    line-height: 140%;
+    color: #555555;
+    margin-bottom: 24px;
+}
+
+.prices-wrapper {
+    margin-top: 80px;
+}
+
+.price-col {
+    width: 32%;
+    background: #F8F4EE;
+    border: 1px solid #E7E0D5;
+    border-radius: 16px;
+    padding: 40px 36px 32px 32px;
+}
+
+p.price-col_title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1;
+    color: var(--main-black);
+    margin-bottom: 60px;
+}
+
+.price-col_data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.price-col_data p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--main-black);
+    max-width: 110px;
+}
+
+.price-col_data span {
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 1;
+    color: var(--main-black);
+}
+
+.price-col a {
+    display: block;
+    text-align: center;
+    color: var(--main-black);
+    background: var(--main-green);
+    box-shadow: 14px 0px 35px rgba(33, 38, 106, 0.1);
+    border-radius: 10px;
+    padding: 16px 0;
+    width: 100%;
+}
+
+
+/*------------------------------- Leaders -------------------------------*/
+.leaders-wrapper {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.leader-item {
+    width: 280px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slick-slide {
+    height: auto;
+}
+
+.news-carousel img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.news-carousel p {
+    font-size: 20px;
+    line-height: 140%;
+    margin-top: 24px;
+}
+
+.news-carousel .slick-slide {
+    margin: 0 13px;
+}
+
+.custom-tab-link {
+    font-size: 24px;
+    line-height: 1.4;
+    text-align: center;
+    color: var(--main-black);
+}
+
+.nav-link.custom-tab-link.active {
+    color: var(--main-green);
+}
+
+.nav.nav-underline {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.faq {
+    padding-bottom: 120px;
+}
+
+
+
+footer {
+    padding: 120px 0;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 50%;
+}
+
+.footer-menu-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-menu-col {
+    width: 25%;
+}
+
+.footer-text {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #141414;
+    padding: 28px 0 42px 0;
+    max-width: 455px;
+}
+
+p.footer-menu_title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+    color: var(--main-black);
+    margin-bottom: 16px;
+}
+
+p.footer-menu_item {
+    margin-bottom: 12px;
+}
+
+p.footer-menu_item a {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #141414;
+    text-decoration: none;
+}

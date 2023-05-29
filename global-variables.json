@@ -1,0 +1,25 @@
+{
+  "app_name": "AppName",
+  "news": [
+    { 
+      "title": "This Latest Move by Roku Should Have Cable Operators Shaking in Their Boots", 
+      "imagePath": "../assets/images/news-test.png",
+      "href": ""
+    },
+    { 
+      "title": "Tesla Borrows a Page From Apple's Playbook. Genius Move or Red Flag?", 
+      "imagePath": "../assets/images/news-test.png",
+      "href": ""
+    },
+    { 
+      "title": "Sick of Being Told to Budget? Try This Easy Method Instead", 
+      "imagePath": "../assets/images/news-test.png",
+      "href": ""
+    },
+    { 
+      "title": "This Latest Move by Roku Should Have Cable Operators Shaking in Their Boots", 
+      "imagePath": "../assets/images/news-test.png",
+      "href": ""
+    }
+  ]
+}

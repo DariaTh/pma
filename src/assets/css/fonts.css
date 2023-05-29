@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/Raleway-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/Raleway-Medium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Medium.ttf");
+    font-weight: 500;
+}
