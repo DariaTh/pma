@@ -414,6 +414,55 @@ p.price-col_title {
 
 /*------------------------------- Testimonials -------------------------------*/
 
+.matching-trium .row-flex {
+    align-items: center;
+}
+
+.matching-col-title p, .matching-col-title h2 {
+    max-width: 600px;
+}
+
+.matching-col-rate {
+    background: #F8F4EE;
+    border-radius: 20px;
+    padding: 20px 50px;
+    height: 140px;
+}
+
+.matching-col-rate p {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+    color: #555555;
+}
+
+.rating {
+    display: flex;
+}
+
+.rating-stars {
+    margin-left: 16px;
+}
+
+.rating-stars img {
+    margin-bottom: 12px;
+}
+
+.rating span {
+    color: var(--main-black);
+    letter-spacing: -0.06em;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 1;
+}
+
+
+.testimonials {
+    margin-top: 120px;
+}
+
 .slick-slide {
     height: auto;
 }
