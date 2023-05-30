@@ -104,3 +104,12 @@ p {
     color: #555555;
     margin-bottom: 40px;
 }
+
+.not-list {
+    padding: 0;
+}
+
+.not-list li {
+    list-style: none;
+    margin-bottom: 16px;
+}
