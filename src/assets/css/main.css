@@ -28,6 +28,10 @@ body {
     padding: 0 80px;
 }
 
+main {
+    padding-bottom: 120px;
+}
+
 
 .header {
     position: sticky;
@@ -594,9 +598,6 @@ p.person-status {
 
 /*------------------------------- FAQ -------------------------------*/
 
-.faq {
-    padding-bottom: 120px;
-}
 
 .faq h2.section-title {
     max-width: 100%;
@@ -642,6 +643,7 @@ p.person-status {
     top: 30px;
 }
 
+/*------------------------------- Footer -------------------------------*/
 
 footer {
     padding: 120px 0;
@@ -707,4 +709,58 @@ p.footer-menu_item a {
 
 .socials a {
     margin-right: 24px;
+}
+
+
+/*------------------------------- Companies -------------------------------*/
+.company-block {
+    background: #F8F4EE;
+    border: 1px solid #E7E0D5;
+    border-radius: 16px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.company-block-text {
+    padding: 32px;
+}
+
+.company-block-text p {
+    font-size: 12px;
+}
+
+.company-block-logo {
+    width: 220px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 38px 18px;
+    position: relative;
+}
+
+.company-block-logo::after {
+    content: "";
+    width: 126px;
+    height: 1px;
+    background: linear-gradient(270deg, rgba(217, 217, 217, 0) 0%, rgba(217, 217, 217, 0.982286) 7.52%, #D9D9D9 91.88%, rgba(217, 217, 217, 0) 100%);
+    transform: rotate(90deg);
+    position: absolute;
+    top: 94px;
+    right: -60px;
+}
+
+.company-block-logo p {
+    font-size: 14px;
+}
+
+.company-block-logo img {
+    max-width: 158px;
+}
+
+.company-block-logo .company-stars {
+    max-width: 96px;
+    margin-top: 15px;
+    margin-bottom: 12px;
 }

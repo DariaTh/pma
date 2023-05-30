@@ -1,4 +1,12 @@
 @media only screen and (max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    .internal-main-section {
+        padding-top: 60px;
+    }
+
     .menu {
         flex-direction: column;
         background-color: #151418;
@@ -26,5 +34,19 @@
         display: block;
         font-size: 28px;
         cursor: pointer;
+    }
+
+
+    .container {
+        padding: 0 24px;
+    }
+
+    h1.internal-page-title {
+        font-size: 32px;
+        line-height: 1.4;
+    }
+
+    section.internal-section img {
+        width: 100%;
     }
 }
