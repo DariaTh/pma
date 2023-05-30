@@ -31,7 +31,7 @@ h1.internal-page-title span {
     width: 100%;
 }
 
-.text-wrapper-part{
+.text-wrapper-part {
     margin-top: 40px;
 }
 
@@ -92,6 +92,15 @@ p {
     font-weight: 700;
 }
 
-.num-list li{
+.num-list li {
     list-style: auto;
+}
+
+.internal-subtitle {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #555555;
+    margin-bottom: 40px;
 }
