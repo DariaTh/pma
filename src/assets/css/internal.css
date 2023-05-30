@@ -55,6 +55,10 @@ h3.internal-page-h3 {
     margin-bottom: 16px;
 }
 
+h3.internal-page-h3-50px {
+    margin-top: 50px;
+}
+
 h4.internal-page-h4 {
     font-weight: 500;
     font-size: 16px;
@@ -90,6 +94,16 @@ p {
 
 .internal-page-ul li span {
     font-weight: 700;
+}
+
+.internal-page-span {
+    font-weight: 700;
+    color: var(--main-green);
+}
+
+.internal-page-span-part {
+    font-weight: 700;
+    color: #FC483F;
 }
 
 .num-list li {
