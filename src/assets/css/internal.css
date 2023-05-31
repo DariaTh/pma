@@ -127,3 +127,8 @@ p {
     list-style: none;
     margin-bottom: 16px;
 }
+
+.internal-section a {
+    font-family: 'Raleway';
+    color: #555555;
+}
