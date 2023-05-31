@@ -620,15 +620,36 @@
             <h2 class="internal-page-h2 internal-page-h2-40px">
                 FAQs
             </h2>
+            <div class="faq-wrapper">
+                {{> faqItem index="1" title="Are there any hidden fees?" text="A brokerage fee is a fee you'll be
+                charged to use a
+                broker's service. These fees can apply to both discount brokers and full-service brokers who offer
+                stock-picking advice." }}
+                {{> faqItem index="2" title="What are fractional shares?" text="Fractional shares let you buy a portion
+                of a share
+                of a company rather than a full share. If a share of a given company costs $1,000 but you only want to
+                invest $250, fractional investing lets you buy a quarter of a share." }}
+                {{> faqItem index="3" title="What is a paper trading account?" text="A paper trading account lets you go
+                through the motions of buying stocks without using actual money. It's a good way to learn the ropes of
+                investing." }}
+                {{> faqItem index="4" title="Is my money safe in a brokerage account?" text="Cash and securities in a
+                brokerage account are insured by the Securities Investor Protection Corporation (SIPC), so you have
+                protection if your broker goes bust. But that doesn't mean you won't lose money if your investments
+                perform poorly." }}
+                {{> faqItem index="5" title="Can you cash out a stock brokerage account?" text="You can cash out a
+                brokerage account by withdrawing your cash balance and selling your investments for cash. It could take
+                a few days for your trades to settle, so you may not get all of your money right away. These can have
+                tax implications, so check with a tax professional." }}
+            </div>
         </div>
     </div>
 </section>
 
 <section class="investing-news top-margin">
-  <div class="container">
-    <h2 class="section-title">Featured <span>Investing News </span></h2>
-    {{> newsCarousel }}
-  </div>
+    <div class="container">
+        <h2 class="section-title">Featured <span>Investing News </span></h2>
+        {{> newsCarousel }}
+    </div>
 </section>
 
 {{> footer }}
