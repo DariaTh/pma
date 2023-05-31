@@ -22,5 +22,26 @@
       "imagePath": "../assets/images/news-test.png",
       "href": ""
     }
+  ],
+
+  "testimonialsExperts": [
+    {
+      "text": "Bitcoin is going to be digital gold. In order to be a part of crypto you need to understand crypto and there is no better place to do it than pm academy. Great public service",
+      "imagePath": "/assets/images/testimonials/expert-michael.png",
+      "name": "Michael Novogratz",
+      "position": "Ex-hedge fund manager and CEO of Galaxy Investment"
+    },
+    {
+      "text": "Bitcoin is going to be digital gold. In order to be a part of crypto you need to understand crypto and there is no better place to do it than pm academy. Great public service",
+      "imagePath": "/assets/images/testimonials/expert-michael.png",
+      "name": "Michael Novogratz",
+      "position": "Ex-hedge fund manager and CEO of Galaxy Investment"
+    }
+  ],
+  "testimonialsTeam": [
+    {}
+  ],
+  "testimonialsMembers": [
+    {}
   ]
 }
