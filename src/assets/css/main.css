@@ -73,21 +73,27 @@ nav {
     display: none;
     opacity: 0;
     position: absolute;
+    top: 30px;
     background-color: #F8F4EE;
-    min-width: 100px;
+    min-width: 280px;
+    padding: 18px 24px;
+    border-radius: 24px;
     transition: 0.2s all ease-in-out;
 }
 
 .drop-menu-item {
     width: 100%;
+    margin-bottom: 12px;
 }
 
 .drop-menu-item:hover a {
     color: #bebebe;
 }
 
-.drop-menu-item a {
+.drop-menu .drop-menu-item a {
     color: #555555;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .menu-item:hover .drop-menu {
@@ -107,6 +113,7 @@ nav {
     font-weight: 400;
     color: #555555;
     transition: 0.2s all ease-in-out;
+    text-decoration: none;
 }
 
 .menu a:hover {
