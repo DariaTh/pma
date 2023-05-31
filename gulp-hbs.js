@@ -2,6 +2,10 @@ const through2 = require("through2");
 const path = require("path");
 const hbs = require("handlebars");
 
+hbs.registerHelper('ifEquals', function(arg1, arg2, options) {
+  return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
+});
+
 module.exports = {
   partials() {
     return through2.obj(function (file, _, cb) {
@@ -22,6 +26,10 @@ module.exports = {
   },
 
   build(data = {}) {
+    hbs.registerHelper('ifEquals', function(arg1, arg2, options) {
+      return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
+    });
+
     return through2.obj(function (file, _, cb) {
       if (file.isBuffer()) {
         file.contents = Buffer.from(

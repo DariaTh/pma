@@ -132,3 +132,28 @@ p {
     font-family: 'Raleway';
     color: #555555;
 }
+
+.rating-badge {
+    max-width: 380px;
+}
+
+.news-wrapper .nav-link.active {
+    background: var(--main-green);
+    color: #ffffff;
+}
+
+.news-wrapper .nav-link {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #555555;
+    border-radius: 90px;
+    padding: 16px 24px;
+}
+
+.newsroom-grid img {
+    width: 100%;
+    border-radius: 16px;
+}
