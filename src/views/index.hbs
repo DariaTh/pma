@@ -216,69 +216,66 @@
       <div class="tab-content" id="v-pills-tabContent">
         <div class="tab-pane fade show active" id="v-pills-experts" role="tabpanel"
           aria-labelledby="v-pills-experts-tab" tabindex="0">
-          <div class="tab-testimonial-carousel">
+
+          {{!-- EXPERTS CAROUSEL --}}
+          <div class="tab-testimonial-carousel experts-carousel">
+            {{#each testimonialsExperts}}
             <div>
               <div class="testimonial-slide-content">
-                <p>Bitcoin is going to be digital gold. In order to be a part of crypto you need to understand crypto
-                  and
-                  there is no better place to do it that PM Academy. Great public service</p>
+                <p>{{ text }}</p>
                 <div class="person-info">
-                  <img src="../assets/images/testimonials/expert-michael.png" />
+                  <img src="{{imagePath}}" />
                   <div class="person-info_name">
-                    <p class="person-name">Michael Novogratz</p>
-                    <p class="person-status">Ex-hedge fund manager and CEO of Galaxy Investment</p>
+                    <p class="person-name">{{name}}</p>
+                    <p class="person-status">{{position}}</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div>
-              <div class="testimonial-slide-content">
-                <p>Bitcoin is going to be digital gold. In order to be a part of crypto you need to understand crypto
-                  and
-                  there is no better place to do it that PM Academy. Great public service</p>
-                <div class="person-info">
-                  <img src="../assets/images/testimonials/expert-michael.png" />
-                  <div class="person-info_name">
-                    <p class="person-name">Michael Novogratz</p>
-                    <p class="person-status">Ex-hedge fund manager and CEO of Galaxy Investment</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="testimonial-slide-content">
-                <p>Bitcoin is going to be digital gold. In order to be a part of crypto you need to understand crypto
-                  and
-                  there is no better place to do it that PM Academy. Great public service</p>
-                <div class="person-info">
-                  <img src="../assets/images/testimonials/expert-michael.png" />
-                  <div class="person-info_name">
-                    <p class="person-name">Michael Novogratz</p>
-                    <p class="person-status">Ex-hedge fund manager and CEO of Galaxy Investment</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="testimonial-slide-content">
-                <p>Bitcoin is going to be digital gold. In order to be a part of crypto you need to understand crypto
-                  and
-                  there is no better place to do it that PM Academy. Great public service</p>
-                <div class="person-info">
-                  <img src="../assets/images/testimonials/expert-michael.png" />
-                  <div class="person-info_name">
-                    <p class="person-name">Michael Novogratz</p>
-                    <p class="person-status">Ex-hedge fund manager and CEO of Galaxy Investment</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            {{/each}}
           </div>
         </div>
         <div class="tab-pane fade" id="v-pills-team" role="tabpanel" aria-labelledby="v-pills-team-tab" tabindex="0">
-          team</div>
+
+          {{!-- TEAM CAROUSEL --}}
+          <div class="tab-testimonial-carousel team-carousel">
+            {{#each testimonialsTeam}}
+            <div>
+              <div class="testimonial-slide-content">
+                <p>{{ text }}</p>
+                <div class="person-info">
+                  <img src="{{imagePath}}" />
+                  <div class="person-info_name">
+                    <p class="person-name">{{name}}</p>
+                    <p class="person-status">{{position}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {{/each}}
+          </div>
+        </div>
         <div class="tab-pane fade" id="v-pills-members" role="tabpanel" aria-labelledby="v-pills-members-tab"
-          tabindex="0">members</div>
+          tabindex="0">
+
+          {{!-- MEMBERS CAROUSEL --}}
+          <div class="tab-testimonial-carousel team-carousel">
+            {{#each testimonialsMembers}}
+            <div>
+              <div class="testimonial-slide-content">
+                <p>{{ text }}</p>
+                <div class="person-info">
+                  <img src="{{imagePath}}" />
+                  <div class="person-info_name">
+                    <p class="person-name">{{name}}</p>
+                    <p class="person-status">{{position}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {{/each}}
+          </div>
+        </div>
       </div>
     </div>
 

@@ -143,10 +143,41 @@ p {
     color: #555555;
 }
 
+
+.rating-badge {
+    max-width: 380px;
+}
+
+.news-wrapper .nav-link.active {
+    background: var(--main-green);
+    color: #ffffff;
+}
+
+.news-wrapper .nav-link {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #555555;
+    border-radius: 90px;
+    padding: 16px 24px;
+}
+
+.newsroom-grid img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.review-item {
+    margin-bottom: 40px;
+}
+
 .internal-section-contact {
     font-family: 'Poppins' !important;
     font-weight: 400;
     font-size: 20px;
     line-height: 1.4;
     color: #141414 !important;
+
 }
