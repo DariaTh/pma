@@ -183,3 +183,14 @@ p {
     color: #141414 !important;
 
 }
+
+p.letter {
+    font-size: 40px;
+    line-height: 1.4;
+    margin-bottom: 40px;
+    color: var(--main-black);
+}
+
+#pills-tab-letters {
+    margin-bottom: 40px;
+}
