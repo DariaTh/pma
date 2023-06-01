@@ -1,8 +1,12 @@
 <div class="news-carousel">
   {{#each news}}
   <div>
-    <img src="{{ imagePath }}" alt=""/>
-    <p>{{title}}</p> 
-    </div>
+    <a href="{{ href }}">
+      <img src="{{ imagePath }}" alt="" />
+    </a>
+    <a href="{{ href }}">
+      <p>{{title}}</p>
+    </a>
+  </div>
   {{/each}}
 </div>

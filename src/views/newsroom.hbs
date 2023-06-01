@@ -29,7 +29,7 @@
 <section class="internal-section">
     <div class="container">
         <div class="news-wrapper">
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <ul class="nav nav-pills" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="pills-stock-tab" data-bs-toggle="pill"
                         data-bs-target="#pills-stock" type="button" role="tab" aria-controls="pills-stock"
@@ -41,24 +41,21 @@
                         aria-selected="false">Retirement</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                    <button class="nav-link" id="pills-investing-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-investing" type="button" role="tab" aria-controls="pills-investing"
                         aria-selected="false">Investing Basics</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled"
-                        aria-selected="false">Crypto</button>
+                    <button class="nav-link" id="pills-crypto-tab" data-bs-toggle="pill" data-bs-target="#pills-crypto"
+                        type="button" role="tab" aria-controls="pills-crypto" aria-selected="false">Crypto</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled"
-                        aria-selected="false">NFT</button>
+                    <button class="nav-link" id="pills-nft-tab" data-bs-toggle="pill" data-bs-target="#pills-nft"
+                        type="button" role="tab" aria-controls="pills-nft" aria-selected="false">NFT</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled"
-                        aria-selected="false">Tax</button>
+                    <button class="nav-link" id="pills-tax-tab" data-bs-toggle="pill" data-bs-target="#pills-tax"
+                        type="button" role="tab" aria-controls="pills-tax" aria-selected="false">Tax</button>
                 </li>
             </ul>
             <div class="tab-content" id="pills-tabContent">
@@ -67,25 +64,58 @@
                     <div class="newsroom-grid">
                         <div class="row">
                             {{#each news}}
-                                {{#ifEquals category "stock-market"}}
-                                    <div class="col-6 col-md-4">
-                                        <img src="{{ imagePath }}" alt="" />
-                                        <p>{{title}}</p> 
+                            {{#ifEquals category "stock-market"}}
+                            <div class="col-6 col-md-4">
+                                <img src="{{ imagePath }}" alt="" />
+                                <p>{{title}}</p>
 
-                                    </div>
-                                {{/ifEquals}}
+                            </div>
+                            {{/ifEquals}}
                             {{/each}}
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="pills-retirement" role="tabpanel"
-                        aria-labelledby="pills-retirement-tab" tabindex="0">...</div>
-                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
-                        tabindex="0">...</div>
-                    <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
-                        tabindex="0">...</div>
+                </div>
+                <div class="tab-pane fade" id="pills-retirement" role="tabpanel" aria-labelledby="pills-retirement-tab"
+                    tabindex="0">
+                    <div class="newsroom-grid">
+                        <div class="row">
+                            {{#each news}}
+                            {{#ifEquals category "retirement"}}
+                            <div class="col-6 col-md-4">
+                                <img src="{{ imagePath }}" alt="" />
+                                <p>{{title}}</p>
+
+                            </div>
+                            {{/ifEquals}}
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-investing" role="tabpanel" aria-labelledby="pills-investing-tab"
+                    tabindex="0">
+                    <div class="newsroom-grid">
+                        <div class="row">
+                            {{#each news}}
+                            {{#ifEquals category "investing"}}
+                            <div class="col-6 col-md-4">
+                                <img src="{{ imagePath }}" alt="" />
+                                <p>{{title}}</p>
+
+                            </div>
+                            {{/ifEquals}}
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-crypto" role="tabpanel" aria-labelledby="pills-crypto-tab"
+                    tabindex="0"></div>
+                <div class="tab-pane fade" id="pills-nft" role="tabpanel" aria-labelledby="pills-nft-tab" tabindex="0">
+                </div>
+                <div class="tab-pane fade" id="pills-tax" role="tabpanel" aria-labelledby="pills-tax-tab" tabindex="0">
                 </div>
             </div>
         </div>
+    </div>
 </section>
 
 
