@@ -1,6 +1,17 @@
 $(document).ready(function () {
 
-  console.log("app initiated");
+  $('#nav-icon').click(function(){
+		$(this).toggleClass('open');
+	});
+
+  $('.menu-item').click(function () {
+    let dropMenu = $(this).find('.drop-menu');
+    if (dropMenu.height() === 0) {
+      dropMenu.animate({ 'max-height': '220px' }, 300); 
+    } else {
+      dropMenu.animate({ 'max-height': '0' }, 300);
+    }
+  });
 
   $('.tab-testimonial-carousel').slick({
     centerMode: true,

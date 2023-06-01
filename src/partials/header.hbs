@@ -16,63 +16,97 @@
         <nav>
           <div class="logo">
             <a href="/">
-            <img src="/assets/images/Logo.png" alt="">
+              <img src="/assets/images/Logo.png" alt="">
             </a>
           </div>
           <input type="checkbox" id="menu-toggle">
-          <label for="menu-toggle" class="menu-icon">&#9776;</label>
+          <label for="menu-toggle" class="menu-icon">
+            <div id="nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+            {{!-- <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="52" height="52" rx="26" fill="#F8F4EE" />
+              <rect x="16" y="17" width="20" height="1" rx="0.5" fill="#555555" />
+              <rect x="16" y="25" width="20" height="1" rx="0.5" fill="#555555" />
+              <rect x="16" y="33" width="20" height="1" rx="0.5" fill="#555555" />
+            </svg> --}}
+
+          </label>
           <ul class="menu">
             <li><a href="#">Our Services </a></li>
             <li class="menu-item menu-item_drop">
-              <a href="#">Investing Basics </a>
-              <ul class="drop-menu">
-                <li class="drop-menu-item">
-                  <a href="/investing-basics/how-to-invest.html">Getting Started With Investing</a>
-                </li>
-                <li class="drop-menu-item">
-                  <a href="/investing-basics/best-online-stock-brokers.html">Best Stock Brokers for Beginners</a>
-                </li>
-                <li class="drop-menu-item">
-                  <a href="/investing-basics/best-cryptocurrency-exchanges.html">Best cryptocurrency apps</a>
-                </li>
-              </ul>
+              <a href="#">Investing Basics
+                <svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L6.5 6L12 1" stroke="#555555" />
+                </svg>
+              </a>
+              <div class="drop-menu">
+                <ul class="drop-menu-list">
+                  <li class="drop-menu-item">
+                    <a href="/investing-basics/how-to-invest.html">Getting Started With Investing</a>
+                  </li>
+                  <li class="drop-menu-item">
+                    <a href="/investing-basics/best-online-stock-brokers.html">Best Stock Brokers for Beginners</a>
+                  </li>
+                  <li class="drop-menu-item">
+                    <a href="/investing-basics/best-cryptocurrency-exchanges.html">Best cryptocurrency apps</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="menu-item menu-item_drop">
-              <a href="#">Stock Market</a>
-              <ul class="drop-menu">
-                <li class="drop-menu-item">
-                  <a href="/stock-market/steps-to-learn.html">6 Steps to Learn How to Buy Stocks</a>
-                </li>
-                <li class="drop-menu-item">
-                  <a href="/stock-market/investing-in-cryptocurrency.html">Investing in Cryptocurrency</a>
-                </li>
-                <li class="drop-menu-item">
-                  <a href="/stock-market/what-is-an-nft.html">What is an NFT?</a>
-                </li>
-                <li class="drop-menu-item">
-                  <a href="/stock-market/best-stocks-to-invest.html">Best Stocks To Invest In</a>
-                </li>
-              </ul>
+              <a href="#">Stock Market
+                <svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L6.5 6L12 1" stroke="#555555" />
+                </svg>
+              </a>
+
+
+              <div class="drop-menu">
+                <ul class="drop-menu-list">
+                  <li class="drop-menu-item">
+                    <a href="/stock-market/steps-to-learn.html">6 Steps to Learn How to Buy Stocks</a>
+                  </li>
+                  <li class="drop-menu-item">
+                    <a href="/stock-market/investing-in-cryptocurrency.html">Investing in Cryptocurrency</a>
+                  </li>
+                  <li class="drop-menu-item">
+                    <a href="/stock-market/what-is-an-nft.html">What is an NFT?</a>
+                  </li>
+                  <li class="drop-menu-item">
+                    <a href="/stock-market/best-stocks-to-invest.html">Best Stocks To Invest In</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="menu-item menu-item_drop">
-              <a href="#">Retirement</a>
-              <ul class="drop-menu">
-                <li class="drop-menu-item">
-                  <a href="/retirement/retirement-planning.html">How to Map Out Your Financial Success</a>
-                </li>
-                <li class="drop-menu-item">
-                  <a href="/retirement/what-is-compound-interest.html">What Is Compound Interest?</a>
-                </li>
-                <li class="drop-menu-item">
-                  <a href="/retirement/choosing-the-best-retirement-plan.html">Choosing the Best Retirement Plan</a>
-                </li>
-                <li class="drop-menu-item">
-                  <a href="/retirement/strategies-to-save-for-retirement.html">8 Strategies to Save for Retirement</a>
-                </li>
-                <li class="drop-menu-item">
-                  <a href="/retirement/understanding-taxation.html">Understanding Taxation of Your Retirement Income</a>
-                </li>
-              </ul>
+              <a href="#">Retirement
+                <svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L6.5 6L12 1" stroke="#555555" />
+                </svg>
+              </a>
+              <div class="drop-menu">
+                <ul class="drop-menu-list">
+                  <li class="drop-menu-item">
+                    <a href="/retirement/retirement-planning.html">How to Map Out Your Financial Success</a>
+                  </li>
+                  <li class="drop-menu-item">
+                    <a href="/retirement/what-is-compound-interest.html">What Is Compound Interest?</a>
+                  </li>
+                  <li class="drop-menu-item">
+                    <a href="/retirement/choosing-the-best-retirement-plan.html">Choosing the Best Retirement Plan</a>
+                  </li>
+                  <li class="drop-menu-item">
+                    <a href="/retirement/strategies-to-save-for-retirement.html">8 Strategies to Save for Retirement</a>
+                  </li>
+                  <li class="drop-menu-item">
+                    <a href="/retirement/understanding-taxation.html">Understanding Taxation of Your Retirement
+                      Income</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li><a href="/about">About us</a></li>
           </ul>
@@ -80,4 +114,4 @@
       </div>
     </header>
     <main>
-    {{!-- {{> nav/top}} --}}
+      {{!-- {{> nav/top}} --}}
