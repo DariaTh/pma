@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
   console.log("app initiated");
 
@@ -9,13 +9,35 @@ $(document).ready(function(){
     slidesToScroll: 1,
     arrows: true,
     variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          centerPadding: '0px',
+        }
+      }
+    ]
   });
 
   $('.news-carousel').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
-    centerMode: true,
     centerPadding: '0px',
+    infinite: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          centerPadding: '0px',
+        }
+      }
+    ]
   });
 });

@@ -3,31 +3,31 @@
   "news": [
     { 
       "title": "6 Steps to Learn How to Buy Stocks", 
-      "imagePath": "/assets/images/news-test.png",
+      "imagePath": "/assets/images/post-img1.png",
       "href": "/stock-market/steps-to-learn.html",
       "category": "stock-market"
     },
     { 
       "title": "Investing in Cryptocurrency", 
-      "imagePath": "/assets/images/news-test.png",
+      "imagePath": "/assets/images/post-img3.png",
       "href": "/stock-market/investing-in-cryptocurrency.html",
       "category": "stock-market"
     },
     { 
       "title": "What is an NFT?", 
-      "imagePath": "/assets/images/news-test.png",
+      "imagePath": "/assets/images/best-online.png",
       "href": "/stock-market/what-is-an-nft.html",
       "category": "stock-market"
     },
     { 
       "title": "Best Stocks To Invest In: April 2023", 
-      "imagePath": "/assets/images/news-test.png",
+      "imagePath": "/assets/images/best-crypto.png",
       "href": "/stock-market/best-stocks-to-invest.html",
       "category": "stock-market"
     },
     { 
       "title": "Retirement Planning: How to Map Out Your Financial Success", 
-      "imagePath": "/assets/images/news-test.png",
+      "imagePath": "/assets/images/retirement-planing.png",
       "href": "/retirement/retirement-planning.html",
       "category": "retirement"
     },
@@ -39,37 +39,37 @@
     },
     { 
       "title": "Choosing the Best Retirement Plan for You", 
-      "imagePath": "/assets/images/news-test.png",
+      "imagePath": "/assets/images/choose-plan.png",
       "href": "/retirement/choosing-the-best-retirement-plan.html",
       "category": "retirement"
     },
     { 
       "title": "8 Strategies to Save for Retirement", 
-      "imagePath": "/assets/images/news-test.png",
+      "imagePath": "/assets/images/start-men.png",
       "href": "/retirement/strategies-to-save-for-retirement.html",
       "category": "retirement"
     },
     { 
       "title": "Understanding Taxation of Your Retirement Income", 
-      "imagePath": "/assets/images/news-test.png",
+      "imagePath": "/assets/images/tax-image.png",
       "href": "/retirement/understanding-taxation.html",
       "category": "retirement"
     },
     { 
       "title": "How to Invest Money: Getting Started With Investing", 
-      "imagePath": "/assets/images/news-test.png",
+      "imagePath": "/assets/images/post-img1.png",
       "href": "/investing-basics/how-to-invest.html",
       "category": "investing"
     },
     { 
       "title": "Best Online Stock Brokers for Beginners for May 2023", 
-      "imagePath": "/assets/images/news-test.png",
+      "imagePath": "/assets/images/best-online.png",
       "href": "/investing-basics/best-online-stock-brokers.html",
       "category": "investing"
     },
     { 
       "title": "Best Cryptocurrency Exchanges & Apps for May 2023", 
-      "imagePath": "/assets/images/news-test.png",
+      "imagePath": "/assets/images/best-crypto.png",
       "href": "/investing-basics/best-cryptocurrency-exchanges.html",
       "category": "investing"
     }

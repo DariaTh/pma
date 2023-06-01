@@ -169,6 +169,19 @@ p {
 .newsroom-grid img {
     width: 100%;
     border-radius: 16px;
+    height: 380px;
+    object-fit: cover;
+}
+
+.newsroom-grid p {
+    font-size: 20px;
+    line-height: 140%;
+    margin-top: 24px;
+    color: var(--main-black);
+}
+
+.news-wrapper .nav-pills {
+    margin-bottom: 60px;
 }
 
 .review-item {

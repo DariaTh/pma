@@ -1,3 +1,9 @@
+@media only screen and (max-width: 1024px) {
+    .logo_item {
+        width: 150px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     body {
         padding: 0;
@@ -5,6 +11,14 @@
 
     .internal-main-section {
         padding-top: 60px;
+    }
+
+    .logo img {
+        width: 90px;
+    }
+
+    nav {
+        padding-top: 24px;
     }
 
     .menu {
@@ -49,4 +63,203 @@
     section.internal-section img {
         width: 100%;
     }
+
+    .main-section h1 {
+        font-size: 32px;
+        line-height: 1.4;
+    }
+
+    .main-section {
+        padding-top: 38px;
+        padding-bottom: 175px;
+    }
+
+    .main-section h2 {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    .call-wrapper {
+        margin-top: 80px;
+    }
+
+    .call-wrapper p {
+        margin-bottom: 24px;
+    }
+
+    .logo_item {
+        width: 50%;
+    }
+
+    .logo_item:nth-child(2n) {
+        border-right: none;
+    }
+
+    .top-margin {
+        margin-top: 120px;
+    }
+
+    .financial-success_text,
+    .financial-success_items {
+        width: 100%;
+    }
+
+    .financial-success_text p {
+        font-size: 24px;
+    }
+
+    .financial-success_text {
+        margin-bottom: 36px;
+    }
+
+    .icon-item_text p {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    h2.section-title {
+        font-size: 32px;
+    }
+
+    .step-col {
+        width: 100%;
+        padding: 50px 0;
+    }
+
+    .step-col:not(:last-child):after {
+        content: "";
+        width: 100%;
+        background: linear-gradient(270deg, rgba(217, 217, 217, 0) 0%, rgba(217, 217, 217, 0.982286) 7.52%, #D9D9D9 91.88%, rgba(217, 217, 217, 0) 100%);
+        transform: rotate(-180deg);
+        position: absolute;
+        right: 0;
+        top: 270px;
+        height: 1px;
+    }
+
+    .price-col {
+        width: 100%;
+        margin-bottom: 26px;
+    }
+
+    p.price-col_title {
+        font-size: 24px;
+    }
+
+    .price-col_data p {
+        font-size: 16px;
+    }
+
+    .price-col_data {
+        align-items: end;
+    }
+
+    .leaders-wrapper {
+        margin-top: 50px;
+    }
+
+    .leader-item {
+        width: 50%;
+        height: 150px;
+    }
+
+    .leader-item img {
+        width: 80%;
+    }
+
+    .matching-col-rate {
+        margin-top: 40px;
+        padding: 20px 24px;
+    }
+
+    .tab-testimonial-carousel::before,
+    .tab-testimonial-carousel::after {
+        content: none;
+    }
+
+    .testimonial-slide-content {
+        width: 330px;
+        padding: 0 24px;
+    }
+
+    .tab-testimonial-carousel .slick-center::after,
+    .tab-testimonial-carousel .slick-center::before  {
+        content: none;
+    }
+
+    .news-carousel p {
+        font-size: 18px;
+    }
+
+    .faq h2.section-title {
+        text-align: left;
+    }
+
+    .nav-link.custom-tab-link {
+        width: 100%;
+    }
+
+    .faq-accordion.accordion .accordion-item .accordion-button.custom-accordion-button {
+        font-size: 18px;
+        padding-left: 24px;
+        height: auto;
+        padding-right: 60px;
+    }
+
+    .accordion-item .accordion-button::after {
+        right: 24px;
+    }
+
+    .footer-col {
+        width: 100%;
+    }
+
+    .footer-text {
+        padding: 48px 0;
+    }
+
+    .socials {
+        margin-bottom: 80px;
+    }
+
+    .footer-menu-col {
+        width: 50%;
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    footer {
+        padding: 120px 24px;
+    }
+
+    .company-block {
+        flex-wrap: wrap;
+    }
+
+    .company-block-logo {
+        width: 100%;
+        height: auto;
+    }
+
+    .company-block-logo::after {
+        content: "";
+        width: 90%;
+        height: 1px;
+        background: linear-gradient(270deg, rgba(217, 217, 217, 0) 0%, rgba(217, 217, 217, 0.982286) 7.52%, #D9D9D9 91.88%, rgba(217, 217, 217, 0) 100%);
+        transform: rotate(-180deg);
+        position: absolute;
+        top: 190;
+        right: 20px;
+    }
+
+    .company-block-logo img:first-child {
+        height: 76px;
+        width: auto;
+        object-fit: contain;
+    }
+
+    h2.internal-page-h2 {
+        font-size: 28px;
+    }
+
 }
