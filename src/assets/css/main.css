@@ -151,7 +151,7 @@ nav {
 .main-section {
     padding-top: 132px;
     padding-bottom: 46px;
-    background-image: url(../images/main-back.png);
+    background-image: url(/assets/images/main-back.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right bottom;

@@ -207,3 +207,7 @@ p.letter {
 #pills-tab-letters {
     margin-bottom: 40px;
 }
+
+.dictionary-wrapper .nav-link {
+    padding: 8px 16px;
+}
