@@ -720,8 +720,12 @@ footer {
     flex-wrap: wrap;
 }
 
-.footer-col {
-    width: 50%;
+.footer-col-1 {
+    width: 45%;
+}
+
+.footer-col-2 {
+    width: 55%;
 }
 
 .footer-menu-wrapper {
