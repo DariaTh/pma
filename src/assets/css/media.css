@@ -312,7 +312,8 @@
         right: 24px;
     }
 
-    .footer-col {
+    .footer-col-1,
+    .footer-col-2 {
         width: 100%;
     }
 
