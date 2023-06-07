@@ -1,17 +1,19 @@
 $(document).ready(function () {
 
-  $('#nav-icon').click(function(){
-		$(this).toggleClass('open');
-	});
-
-  $('.menu-item').click(function () {
-    let dropMenu = $(this).find('.drop-menu');
-    if (dropMenu.height() === 0) {
-      dropMenu.animate({ 'max-height': '220px' }, 300); 
-    } else {
-      dropMenu.animate({ 'max-height': '0' }, 300);
-    }
+  $('#nav-icon').click(function () {
+    $(this).toggleClass('open');
   });
+
+  if (window.innerWidth < 768) {
+    $('.menu-item').click(function () {
+      let dropMenu = $(this).find('.drop-menu');
+      if (dropMenu.height() === 0) {
+        dropMenu.animate({ 'max-height': '240px' }, 300);
+      } else {
+        dropMenu.animate({ 'max-height': '0' }, 300);
+      }
+    });
+  }
 
   $('.tab-testimonial-carousel').slick({
     centerMode: true,
