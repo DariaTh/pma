@@ -9,7 +9,7 @@
     <div class="call-wrapper">
       <p>If you have not received a call in the next two hours, please click here to schedule a phone appointment with
         your dedicated expert</p>
-      <a href="">Start now</a>
+      <a href="#" id="chat-link">Start now</a>
     </div>
   </div>
 </section>
@@ -181,21 +181,24 @@
 
     <div class="testimonials">
       <div class="nav nav-underline" id="v-pills-tab" role="tablist">
-        <button class="nav-link active custom-tab-link" id="v-pills-experts-tab" data-bs-toggle="pill"
-          data-bs-target="#v-pills-experts" type="button" role="tab" aria-controls="v-pills-experts"
-          aria-selected="true">Experts</button>
+        <button class="nav-link active custom-tab-link" id="v-pills-members-tab" data-bs-toggle="pill"
+          data-bs-target="#v-pills-members" type="button" role="tab" aria-controls="v-pills-members"
+          aria-selected="true">Members</button>
+
         <button class="nav-link custom-tab-link" id="v-pills-team-tab" data-bs-toggle="pill"
           data-bs-target="#v-pills-team" type="button" role="tab" aria-controls="v-pills-team"
           aria-selected="false">Team</button>
-        <button class="nav-link custom-tab-link" id="v-pills-members-tab" data-bs-toggle="pill"
-          data-bs-target="#v-pills-members" type="button" role="tab" aria-controls="v-pills-members"
-          aria-selected="false">Members</button>
+
+        <button class="nav-link custom-tab-link" id="v-pills-experts-tab" data-bs-toggle="pill"
+          data-bs-target="#v-pills-experts" type="button" role="tab" aria-controls="v-pills-experts"
+          aria-selected="false">Experts</button>
       </div>
       <div class="tab-content" id="v-pills-tabContent">
-        <div class="tab-pane fade show active" id="v-pills-experts" role="tabpanel"
+
+        {{!-- EXPERTS CAROUSEL --}}
+        <div class="tab-pane fade" id="v-pills-experts" role="tabpanel"
           aria-labelledby="v-pills-experts-tab" tabindex="0">
 
-          {{!-- EXPERTS CAROUSEL --}}
           <div class="tab-testimonial-carousel experts-carousel">
             {{#each testimonialsExperts}}
             <div>
@@ -213,9 +216,10 @@
             {{/each}}
           </div>
         </div>
+
+        {{!-- TEAM CAROUSEL --}}
         <div class="tab-pane fade" id="v-pills-team" role="tabpanel" aria-labelledby="v-pills-team-tab" tabindex="0">
 
-          {{!-- TEAM CAROUSEL --}}
           <div class="tab-testimonial-carousel team-carousel">
             {{#each testimonialsTeam}}
             <div>
@@ -233,10 +237,11 @@
             {{/each}}
           </div>
         </div>
-        <div class="tab-pane fade" id="v-pills-members" role="tabpanel" aria-labelledby="v-pills-members-tab"
+
+        {{!-- MEMBERS CAROUSEL --}}
+        <div class="tab-pane fade show active" id="v-pills-members" role="tabpanel" aria-labelledby="v-pills-members-tab"
           tabindex="0">
 
-          {{!-- MEMBERS CAROUSEL --}}
           <div class="tab-testimonial-carousel team-carousel">
             {{#each testimonialsMembers}}
             <div>
@@ -290,7 +295,7 @@
         <div class="tab-pane fade" id="v-pills-trading" role="tabpanel" aria-labelledby="v-pills-trading-tab"
           tabindex="0">
           {{> faqHomeTrading }}
-          </div>
+        </div>
         <div class="tab-pane fade" id="v-pills-technical" role="tabpanel" aria-labelledby="v-pills-technical-tab"
           tabindex="0">
           {{> faqHomeTech }}</div>

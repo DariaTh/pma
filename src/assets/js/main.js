@@ -71,5 +71,17 @@ $(document).ready(function () {
       }
     ]
   });
+
+
+  var chatLink = document.getElementById('chat-link');
+    
+  chatLink.addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    // Open the HubSpot chat
+    if (typeof(window.HubSpotConversations) !== 'undefined') {
+      window.HubSpotConversations.widget.open();
+    }
+  });
   
 });
