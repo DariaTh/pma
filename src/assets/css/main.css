@@ -146,7 +146,8 @@ nav {
     margin-top: 140px;
 }
 
-a:not([href]):not([class]), a:not([href]):not([class]):hover {
+a:not([href]):not([class]),
+a:not([href]):not([class]):hover {
     color: #555555;
 }
 
@@ -453,7 +454,7 @@ p.price-col_title {
     padding: 10px;
 }
 
-.leader-item.custom-padding img{
+.leader-item.custom-padding img {
     padding: 20px;
 }
 
@@ -471,7 +472,8 @@ p.price-col_title {
     align-items: center;
 }
 
-.matching-col-title p, .matching-col-title h2 {
+.matching-col-title p,
+.matching-col-title h2 {
     max-width: 600px;
 }
 
@@ -667,6 +669,7 @@ button.slick-next.slick-arrow {
     top: -80px;
     right: 13px;
 }
+
 button.slick-next.slick-arrow.slick-disabled {
     background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23D9D9D9'/%3E%3Cpath d='M22 15.71L22.3447 15.3478L22.7253 15.71L22.3447 16.0722L22 15.71ZM10 16.21C9.72386 16.21 9.5 15.9861 9.5 15.71C9.5 15.4338 9.72386 15.21 10 15.21V16.21ZM16.3447 9.6378L22.3447 15.3478L21.6553 16.0722L15.6553 10.3622L16.3447 9.6378ZM22.3447 16.0722L16.3447 21.7822L15.6553 21.0578L21.6553 15.3478L22.3447 16.0722ZM22 16.21H10V15.21H22V16.21Z' fill='white'/%3E%3C/svg%3E%0A");
 }
@@ -679,9 +682,11 @@ button.slick-prev.slick-arrow {
     right: 53px;
     left: auto;
 }
+
 button.slick-prev.slick-arrow.slick-disabled {
     background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='16' cy='16' r='16' transform='matrix(-1 0 0 1 32 0)' fill='%23D9D9D9'/%3E%3Cpath d='M10 15.71L9.65531 15.3478L9.27471 15.71L9.65531 16.0722L10 15.71ZM22 16.21C22.2761 16.21 22.5 15.9861 22.5 15.71C22.5 15.4338 22.2761 15.21 22 15.21V16.21ZM15.6553 9.6378L9.65531 15.3478L10.3447 16.0722L16.3447 10.3622L15.6553 9.6378ZM9.65531 16.0722L15.6553 21.7822L16.3447 21.0578L10.3447 15.3478L9.65531 16.0722ZM10 16.21H22V15.21H10V16.21Z' fill='white'/%3E%3C/svg%3E%0A");
 }
+
 /*------------------------------- FAQ -------------------------------*/
 
 
@@ -859,4 +864,124 @@ p.footer-menu_item a {
 
 .accordion-button:focus {
     color: var(--main-black);
+}
+
+/* Modal Content */
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    display: block;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: opacity 0.2s ease-out;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: 15% auto;
+    padding: 24px;
+    border: 0;
+    border-radius: 16px;
+    width: 600px;
+    height: 440px;
+    position: relative;
+    text-align: center;
+}
+
+.close {
+    color: #555555;
+    font-size: 32px;
+    line-height: 1;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content .person-img {
+    width: 132px;
+    height: 132px;
+    margin: 0 auto;
+    margin-top: -55px;
+}
+
+.modal-content .stars-img {
+    width: 168px;
+    margin: 0 auto;
+    margin-bottom: 52px;
+}
+
+.modal-content p.name {
+    color: #333333;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-top: 16px;
+}
+
+.modal-content .text {
+    position: relative;
+}
+
+.modal-content .text p {
+    color: #333333;
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 504px;
+}
+
+.modal-content .modal-btn {
+    color: #141414;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    background: #00C753;
+    box-shadow: 14px 0px 35px rgba(33, 38, 106, 0.1);
+    border-radius: 10px;
+    width: 280px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 62px;
+    transition: 0.2s;
+}
+
+.modal-content .modal-btn:hover {
+    color: #ffffff;
+    background: #000000;
+}
+
+svg.quote1 {
+    position: absolute;
+    left: 4px;
+    top: -20px;
+}
+
+svg.quote2 {
+    position: absolute;
+    right: 4px;
+    bottom: -20px;
 }

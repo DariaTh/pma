@@ -144,7 +144,7 @@
       }
 
 
-#nav-icon span:nth-child(1) {
+    #nav-icon span:nth-child(1) {
     top: 0px;
     -webkit-transform-origin: left center;
     -moz-transform-origin: left center;
@@ -413,4 +413,16 @@
         margin-bottom: 80px;
     }
 
+}
+
+
+@media only screen and (max-width: 600px)  {
+    .modal-content {
+        width: 90%;
+        height: auto;
+    }
+
+    .modal-content .modal-btn {
+        width: 100%;
+    }
 }

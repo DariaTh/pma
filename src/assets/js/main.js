@@ -74,14 +74,43 @@ $(document).ready(function () {
 
 
   var chatLink = document.getElementById('chat-link');
-    
-  chatLink.addEventListener('click', function(e) {
+
+  chatLink.addEventListener('click', function (e) {
     e.preventDefault();
-    
+
     // Open the HubSpot chat
-    if (typeof(window.HubSpotConversations) !== 'undefined') {
+    if (typeof (window.HubSpotConversations) !== 'undefined') {
       window.HubSpotConversations.widget.open();
     }
   });
-  
+
+
+  // Exit Popup
+  var popup = document.getElementById('exitPopup');
+  // Show the popup and overlay when the user tries to leave the page
+  document.addEventListener('mouseleave', function (e) {
+    if (e.clientY < 0) {
+      console.log('is')
+      popup.style.visibility = 'visible';
+      popup.style.opacity = '1';
+    }
+  });
+
+  var closeButton = document.getElementById('exitPopupClose');
+
+  closeButton.addEventListener('click', function () {
+    popup.style.opacity = '0';
+    popup.style.visibility = 'hidden';
+  });
+
+  var popupContent = document.getElementById('exitPopupContent');
+
+  document.addEventListener('click', function (e) {
+    if (!popupContent.contains(e.target)) {
+      popup.style.visibility = 'hidden';
+      popup.style.opacity = '0';
+    }
+  });
+
+
 });
