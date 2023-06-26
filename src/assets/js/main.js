@@ -112,5 +112,14 @@ $(document).ready(function () {
     }
   });
 
+  var claimButton = document.getElementById('claimButton');
+  const openAccountSection = document.getElementById("openAccount");
+
+  claimButton.addEventListener('click', function (event) {
+    event.preventDefault();
+    openAccountSection.scrollIntoView();
+    popup.style.opacity = '0';
+    popup.style.visibility = 'hidden';
+  });
 
 });
