@@ -85,14 +85,20 @@ $(document).ready(function () {
   });
 
 
-  // Exit Popup
+  // Exit popup
   var popup = document.getElementById('exitPopup');
   // Show the popup and overlay when the user tries to leave the page
   document.addEventListener('mouseleave', function (e) {
+    const popupShown = localStorage.getItem('exitPopupShown');
+
     if (e.clientY < 0) {
-      console.log('is')
-      popup.style.visibility = 'visible';
-      popup.style.opacity = '1';
+      if (!popupShown) {
+        console.log(popupShown)
+        popup.style.visibility = 'visible';
+        popup.style.opacity = '1';
+
+        localStorage.setItem('exitPopupShown', 'true');
+      }
     }
   });
 
