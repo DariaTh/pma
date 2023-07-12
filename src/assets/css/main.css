@@ -234,6 +234,10 @@ a:not([href]):not([class]):hover {
     border-right: 1px solid #D9D9D9;
 }
 
+.logo_item:nth-child(5) img, .logo_item:nth-child(6) img {
+    width: 100%;
+}
+
 
 /*------------------------------- Financial success -------------------------------*/
 
