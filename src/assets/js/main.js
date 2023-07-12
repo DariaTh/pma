@@ -73,6 +73,7 @@ $(document).ready(function () {
   });
 
 
+   // HubSpot chat
   var chatLink = document.getElementById('chat-link');
 
   chatLink.addEventListener('click', function (e) {
@@ -82,6 +83,19 @@ $(document).ready(function () {
     if (typeof (window.HubSpotConversations) !== 'undefined') {
       window.HubSpotConversations.widget.open();
     }
+  });
+
+  var startTradeBtn = document.getElementsByClassName('openChatBtn');
+
+  Array.from(startTradeBtn).forEach(element => {
+    element.addEventListener('click', function (e) {
+      e.preventDefault();
+  
+      // Open the HubSpot chat
+      if (typeof (window.HubSpotConversations) !== 'undefined') {
+        window.HubSpotConversations.widget.open();
+      }
+    });
   });
 
 
