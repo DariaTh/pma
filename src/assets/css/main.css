@@ -252,40 +252,27 @@ a:not([href]):not([class]):hover {
     font-size: 14px;
 }
 
-.testimonial-carousel-item {
-    padding: 32px;
-    border: 1px solid #D9D9D9;
-    border-radius: 8px;
-}
-
-.testimonial-carousel-item_flex {
-    display: flex;
-    justify-content: space-between;
+.testimonial-carousel {
     margin-bottom: 16px;
 }
 
-.testimonial-carousel-item_flex span {
-    color: #6A6A6A;
-    font-size: 12px;
-    font-weight: 300;
+.testimonial-carousel-item {
+    padding: 10px;
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+    margin: 0 8px;
 }
 
-.testimonial-carousel-item h5 {
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 8px;
+.testimonial-carousel .testimonial-carousel-item {
+    height: 364px !important;
 }
 
-.testimonial-carousel-item p {
-    color: #000000;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.4;
-    margin-bottom: 8px;
+.testimonial-carousel_second .testimonial-carousel-item {
+    height: 214px !important;
 }
 
-.testimonial-carousel-item p.name {
-    font-weight: 700;
+.testimonial-carousel-item img {
+    width: 100%;
 }
 
 /*------------------------------- See what other saying -------------------------------*/

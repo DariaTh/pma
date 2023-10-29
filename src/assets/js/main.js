@@ -145,12 +145,40 @@ $(document).ready(function () {
 });
 
 $('.testimonial-carousel').slick({
+  speed: 5000,
+  autoplay: true,
+  autoplaySpeed: 0,
   slidesToShow: 4,
   slidesToScroll: 1,
   arrows: false,
-  autoplay: true,
-  autoplaySpeed: 2000,
   infinite: true,
+  adaptiveHeight: false,
+  cssEase: 'linear',
+  centerMode: true,
+  focusOnSelect: true,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    }
+  ]
+});
+
+$('.testimonial-carousel_second').slick({
+  speed: 5000,
+  autoplay: true,
+  autoplaySpeed: 0,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  arrows: false,
+  infinite: true,
+  adaptiveHeight: false,
+  cssEase: 'linear',
+  centerMode: true,
+  focusOnSelect: true,
   responsive: [
     {
       breakpoint: 768,
