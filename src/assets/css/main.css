@@ -248,6 +248,7 @@ a:not([href]):not([class]):hover {
 
 .rating-wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     margin-top: 93px;
@@ -295,8 +296,8 @@ a:not([href]):not([class]):hover {
 }
 
 .see-what-others-section .container {
-    max-width: 1192px;
-    padding: 0;
+    max-width: 1232px;
+    padding: 0 20px;
 }
 
 .other-saying-wrapper {
