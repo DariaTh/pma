@@ -224,6 +224,13 @@ a:not([href]):not([class]):hover {
 .call-wrapper a.link-text {
     color: #333333;
     margin-right: 40px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.call-wrapper a.link-text:hover {
+    background: var(--main-green);
+    box-shadow: 14px 0px 35px rgba(33, 38, 106, 0.1);
 }
 
 .call-wrapper a.link-btn {
@@ -231,6 +238,12 @@ a:not([href]):not([class]):hover {
     box-shadow: 14px 0px 35px rgba(33, 38, 106, 0.1);
     border-radius: 10px;
     color: #333333;
+    transition: 0.3s;
+}
+
+.call-wrapper a.link-btn:hover {
+    background: #333333;
+    color: #ffffff;
 }
 
 .rating-wrapper {
