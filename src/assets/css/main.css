@@ -60,6 +60,7 @@ nav {
     background-color: #F8F4EE;
     padding: 17px 48px;
     border-radius: 50px;
+    margin-bottom: 0;
 }
 
 .menu-item {
@@ -149,6 +150,13 @@ nav {
 a:not([href]):not([class]),
 a:not([href]):not([class]):hover {
     color: #555555;
+}
+
+.logo span {
+    color: #00C753;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 500;
 }
 
 /*------------------------------- Main section -------------------------------*/

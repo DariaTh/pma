@@ -26,9 +26,13 @@
       <div class="container">
         <nav>
           <div class="logo">
-            <a href="/">
-              <img src="/assets/images/logo.svg" alt="">
-            </a>
+                {{~#if logo}}
+                  <span>{{~logo}}</span>
+                {{~^~}}
+                  <a href="/">
+                    <img src="/assets/images/logo.svg" alt="">
+                  </a>
+                {{~/if~}}
           </div>
           <input type="checkbox" id="menu-toggle">
           <label for="menu-toggle" class="menu-icon">
