@@ -605,6 +605,10 @@ p.price-col_title {
     color: #555555;
 }
 
+.matching-col-rate a {
+    text-decoration: none;
+}
+
 .rating {
     display: flex;
 }
