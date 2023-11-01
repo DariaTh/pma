@@ -163,7 +163,7 @@ a:not([href]):not([class]):hover {
 
 .main-section {
     padding-top: 100px;
-    padding-bottom: 46px;
+    padding-bottom: 25px;
 }
 
 .main-section h1 {
@@ -268,6 +268,10 @@ a:not([href]):not([class]):hover {
     padding: 13px 21px;
 }
 
+.rating-wrapper a {
+    text-decoration: none;
+}
+
 .rating-item span {
     margin-right: 18px;
     color: #6A6A6A;
@@ -322,6 +326,10 @@ a:not([href]):not([class]):hover {
     min-height: 407px;
 }
 
+.other-saying-wrapper a {
+    text-decoration: none;
+}
+
 .other-saying_item p {
     color: #000000;
     font-weight: 600;
@@ -329,6 +337,10 @@ a:not([href]):not([class]):hover {
     font-size: 24px;
     line-height: 1.4;
     margin-bottom: 32px;
+}
+
+.other-saying_item span {
+    color: #00C753;
 }
 
 .other-saying_item img.video-img {

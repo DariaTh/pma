@@ -212,16 +212,11 @@
 
     .main-section {
         padding-top: 38px;
-        padding-bottom: 175px;
     }
 
     .main-section h2 {
         font-size: 20px;
         line-height: 1.4;
-    }
-
-    .call-wrapper {
-        margin-top: 80px;
     }
 
     .call-wrapper p {
@@ -429,7 +424,15 @@
         margin-right: 0px;
     }
 
+    .rating-wrapper {
+        margin-top: 80px;
+    }
+
     .rating-item {
+        width: 100%;
+    }
+
+    .rating-wrapper a {
         width: 100%;
     }
 
@@ -445,6 +448,10 @@
         width: 100%;
         max-width: 100%;
         margin-bottom: 20px;
+    }
+
+    .other-saying_item img.video-img {
+        width: 100%;
     }
 
 }
